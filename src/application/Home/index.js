@@ -6,7 +6,7 @@ function Home(props) {
   }
 
   return (
-    <div>Home123</div>
+    <div>Home</div>
   )
 }
 
