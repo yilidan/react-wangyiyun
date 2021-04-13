@@ -126,6 +126,12 @@ module.exports = function (webpackEnv) {
               },
               stage: 3,
             }),
+            // require('postcss-pxtorem')({
+            //   rootValue: 100,
+            //   selectorBlackList: [], //过滤
+            //   propList: ['*'],
+            //   minPixelValue: 2,
+            // }),
             // Adds PostCSS Normalize as the reset css with default options,
             // so that it honors browserslist config in package.json
             // which in turn let's users customize the target behavior as per their needs.
@@ -138,7 +144,7 @@ module.exports = function (webpackEnv) {
         loader: 'px2rem-loader',
         options: {
           remUni: 75,
-          remPrecision: 8
+          remPrecision: 2
         }
       },
     ].filter(Boolean);

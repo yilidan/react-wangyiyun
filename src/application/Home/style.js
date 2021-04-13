@@ -9,7 +9,7 @@ export const Top = styled.div`
   &>span{
     line-height: 40px;
     color: #f1f1f1;
-    font-size: 20px;
+    /* font-size: 20px; */
     &.iconfont{
       font-size: 25px;
     }

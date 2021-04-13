@@ -11,11 +11,11 @@ import store from './store/index'
 function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <HashRouter>
         <GlobalStyle></GlobalStyle>
         <IconStyle></IconStyle>
         { renderRoutes(routes) }
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   )
 }
